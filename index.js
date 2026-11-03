@@ -8,6 +8,7 @@ const CONFIG_PATH = path.join(__dirname, 'wifi-config.json');
 
 app.use(express.json({ limit: '1mb' }));
 
+<<<<<<< HEAD
 app.get('/', (req, res) => {
   res.type('html').send(`<!doctype html>
 <html lang="th">
@@ -81,6 +82,8 @@ app.get('/', (req, res) => {
 </html>`);
 });
 
+=======
+>>>>>>> 79bfc0b776a61356f049db3bbcbeaf5f53e2778d
 function readConfig() {
   try {
     const raw = fs.readFileSync(CONFIG_PATH, 'utf8');
